@@ -1,4 +1,4 @@
-module github.com/ardasener/go_grpc_greeter
+module github.com/aysegulrana/rpc_lab
 
 go 1.17
 
