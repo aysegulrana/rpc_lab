@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package="github.com/ardasener/go_grpc_greeter/pb";
+
+// The greeting service definition.
+service Greeter {
+
+  rpc MonoHello(HelloRequest) returns (HelloResponse);
+
+  rpc LotsOfReplies(HelloRequest) returns (stream HelloResponse);
+
+  rpc LotsOfGreetings(stream HelloRequest) returns (HelloResponse);
+
+  rpc BidiHello(stream HelloRequest) returns (stream HelloResponse);
+}
+
+
+message HelloRequest {
+  string name = 1;
+}
+
+
+message HelloResponse {
+  string message = 1;  
+}
