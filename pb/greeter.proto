@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package="github.com/ardasener/go_grpc_greeter/pb";
+option go_package="github.com/aysegulrana/rpc_lab/pb";
 
 // The greeting service definition.
 service Greeter {
